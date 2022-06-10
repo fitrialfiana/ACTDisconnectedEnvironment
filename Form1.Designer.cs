@@ -33,6 +33,8 @@ namespace DisconnectedEnvironment
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.empdetailsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.hRDataSet1 = new DisconnectedEnvironment.HRDataSet1();
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
@@ -44,31 +46,47 @@ namespace DisconnectedEnvironment
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.txtCode = new System.Windows.Forms.TextBox();
+            this.txtName = new System.Windows.Forms.TextBox();
+            this.empdetailsBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.txtAddress = new System.Windows.Forms.TextBox();
+            this.empdetailsBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.txtState = new System.Windows.Forms.TextBox();
+            this.empdetailsBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
+            this.txtCountry = new System.Windows.Forms.TextBox();
+            this.empdetailsBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
+            this.cbDesignation = new System.Windows.Forms.ComboBox();
+            this.empdetailsBindingSource5 = new System.Windows.Forms.BindingSource(this.components);
+            this.cbDepartment = new System.Windows.Forms.ComboBox();
+            this.empdetailsBindingSource6 = new System.Windows.Forms.BindingSource(this.components);
+            this.label1 = new System.Windows.Forms.Label();
+            this.cmdAdd = new System.Windows.Forms.Button();
+            this.cmdSave = new System.Windows.Forms.Button();
+            this.cmdDelete = new System.Windows.Forms.Button();
+            this.empdetailsTableAdapter = new DisconnectedEnvironment.HRDataSet1TableAdapters.empdetailsTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
             this.bindingNavigator1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.empdetailsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hRDataSet1)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.empdetailsBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.empdetailsBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.empdetailsBindingSource3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.empdetailsBindingSource4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.empdetailsBindingSource5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.empdetailsBindingSource6)).BeginInit();
             this.SuspendLayout();
             // 
             // bindingNavigator1
             // 
             this.bindingNavigator1.AddNewItem = this.bindingNavigatorAddNewItem;
+            this.bindingNavigator1.BindingSource = this.empdetailsBindingSource;
             this.bindingNavigator1.CountItem = this.bindingNavigatorCountItem;
             this.bindingNavigator1.DeleteItem = this.bindingNavigatorDeleteItem;
             this.bindingNavigator1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -102,6 +120,16 @@ namespace DisconnectedEnvironment
             this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
             this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorAddNewItem.Text = "Add new";
+            // 
+            // empdetailsBindingSource
+            // 
+            this.empdetailsBindingSource.DataMember = "empdetails";
+            this.empdetailsBindingSource.DataSource = this.hRDataSet1;
+            // 
+            // hRDataSet1
+            // 
+            this.hRDataSet1.DataSetName = "HRDataSet1";
+            this.hRDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // bindingNavigatorCountItem
             // 
@@ -191,13 +219,13 @@ namespace DisconnectedEnvironment
             this.tableLayoutPanel1.Controls.Add(this.label5, 0, 4);
             this.tableLayoutPanel1.Controls.Add(this.label6, 0, 5);
             this.tableLayoutPanel1.Controls.Add(this.label7, 0, 6);
-            this.tableLayoutPanel1.Controls.Add(this.textBox1, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.textBox2, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.textBox3, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.textBox4, 1, 3);
-            this.tableLayoutPanel1.Controls.Add(this.textBox5, 1, 4);
-            this.tableLayoutPanel1.Controls.Add(this.comboBox1, 1, 5);
-            this.tableLayoutPanel1.Controls.Add(this.comboBox2, 1, 6);
+            this.tableLayoutPanel1.Controls.Add(this.txtCode, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.txtName, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.txtAddress, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.txtState, 1, 3);
+            this.tableLayoutPanel1.Controls.Add(this.txtCountry, 1, 4);
+            this.tableLayoutPanel1.Controls.Add(this.cbDesignation, 1, 5);
+            this.tableLayoutPanel1.Controls.Add(this.cbDepartment, 1, 6);
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(48, 52);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -212,16 +240,6 @@ namespace DisconnectedEnvironment
             this.tableLayoutPanel1.Size = new System.Drawing.Size(350, 240);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(3, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(81, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Employee Code";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -230,6 +248,7 @@ namespace DisconnectedEnvironment
             this.label2.Size = new System.Drawing.Size(84, 13);
             this.label2.TabIndex = 1;
             this.label2.Text = "Employee Name";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label3
             // 
@@ -263,9 +282,9 @@ namespace DisconnectedEnvironment
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(3, 176);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(60, 13);
+            this.label6.Size = new System.Drawing.Size(63, 13);
             this.label6.TabIndex = 5;
-            this.label6.Text = "Destination";
+            this.label6.Text = "Designation";
             // 
             // label7
             // 
@@ -276,101 +295,166 @@ namespace DisconnectedEnvironment
             this.label7.TabIndex = 6;
             this.label7.Text = "Department";
             // 
-            // textBox1
+            // txtCode
             // 
-            this.textBox1.Location = new System.Drawing.Point(147, 3);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 7;
+            this.txtCode.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.empdetailsBindingSource, "ccode", true));
+            this.txtCode.Location = new System.Drawing.Point(147, 3);
+            this.txtCode.Name = "txtCode";
+            this.txtCode.Size = new System.Drawing.Size(100, 20);
+            this.txtCode.TabIndex = 7;
             // 
-            // textBox2
+            // txtName
             // 
-            this.textBox2.Location = new System.Drawing.Point(147, 37);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 8;
+            this.txtName.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.empdetailsBindingSource1, "cname", true));
+            this.txtName.Location = new System.Drawing.Point(147, 37);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(100, 20);
+            this.txtName.TabIndex = 8;
+            this.txtName.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
-            // textBox3
+            // empdetailsBindingSource1
             // 
-            this.textBox3.Location = new System.Drawing.Point(147, 70);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(186, 20);
-            this.textBox3.TabIndex = 9;
+            this.empdetailsBindingSource1.DataMember = "empdetails";
+            this.empdetailsBindingSource1.DataSource = this.hRDataSet1;
             // 
-            // textBox4
+            // txtAddress
             // 
-            this.textBox4.Location = new System.Drawing.Point(147, 105);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 10;
+            this.txtAddress.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.empdetailsBindingSource2, "caddress", true));
+            this.txtAddress.Location = new System.Drawing.Point(147, 70);
+            this.txtAddress.Name = "txtAddress";
+            this.txtAddress.Size = new System.Drawing.Size(186, 20);
+            this.txtAddress.TabIndex = 9;
             // 
-            // textBox5
+            // empdetailsBindingSource2
             // 
-            this.textBox5.Location = new System.Drawing.Point(147, 140);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 11;
+            this.empdetailsBindingSource2.DataMember = "empdetails";
+            this.empdetailsBindingSource2.DataSource = this.hRDataSet1;
             // 
-            // comboBox1
+            // txtState
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(147, 179);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 12;
+            this.txtState.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.empdetailsBindingSource3, "cstate", true));
+            this.txtState.Location = new System.Drawing.Point(147, 105);
+            this.txtState.Name = "txtState";
+            this.txtState.Size = new System.Drawing.Size(100, 20);
+            this.txtState.TabIndex = 10;
             // 
-            // comboBox2
+            // empdetailsBindingSource3
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(147, 214);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 21);
-            this.comboBox2.TabIndex = 13;
+            this.empdetailsBindingSource3.DataMember = "empdetails";
+            this.empdetailsBindingSource3.DataSource = this.hRDataSet1;
             // 
-            // button1
+            // txtCountry
             // 
-            this.button1.Location = new System.Drawing.Point(505, 89);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(95, 43);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Add";
-            this.button1.UseVisualStyleBackColor = true;
+            this.txtCountry.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.empdetailsBindingSource4, "ccountry", true));
+            this.txtCountry.Location = new System.Drawing.Point(147, 140);
+            this.txtCountry.Name = "txtCountry";
+            this.txtCountry.Size = new System.Drawing.Size(100, 20);
+            this.txtCountry.TabIndex = 11;
             // 
-            // button2
+            // empdetailsBindingSource4
             // 
-            this.button2.Location = new System.Drawing.Point(505, 138);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(95, 35);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Save";
-            this.button2.UseVisualStyleBackColor = true;
+            this.empdetailsBindingSource4.DataMember = "empdetails";
+            this.empdetailsBindingSource4.DataSource = this.hRDataSet1;
             // 
-            // button3
+            // cbDesignation
             // 
-            this.button3.Location = new System.Drawing.Point(505, 179);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(95, 33);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "Delete";
-            this.button3.UseVisualStyleBackColor = true;
+            this.cbDesignation.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.empdetailsBindingSource5, "cDesignation", true));
+            this.cbDesignation.FormattingEnabled = true;
+            this.cbDesignation.Location = new System.Drawing.Point(147, 179);
+            this.cbDesignation.Name = "cbDesignation";
+            this.cbDesignation.Size = new System.Drawing.Size(121, 21);
+            this.cbDesignation.TabIndex = 12;
+            // 
+            // empdetailsBindingSource5
+            // 
+            this.empdetailsBindingSource5.DataMember = "empdetails";
+            this.empdetailsBindingSource5.DataSource = this.hRDataSet1;
+            // 
+            // cbDepartment
+            // 
+            this.cbDepartment.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.empdetailsBindingSource6, "cDepartment", true));
+            this.cbDepartment.FormattingEnabled = true;
+            this.cbDepartment.Location = new System.Drawing.Point(147, 214);
+            this.cbDepartment.Name = "cbDepartment";
+            this.cbDepartment.Size = new System.Drawing.Size(121, 21);
+            this.cbDepartment.TabIndex = 13;
+            // 
+            // empdetailsBindingSource6
+            // 
+            this.empdetailsBindingSource6.DataMember = "empdetails";
+            this.empdetailsBindingSource6.DataSource = this.hRDataSet1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(3, 3);
+            this.label1.Margin = new System.Windows.Forms.Padding(3);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(81, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Employee Code";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // cmdAdd
+            // 
+            this.cmdAdd.Location = new System.Drawing.Point(505, 98);
+            this.cmdAdd.Name = "cmdAdd";
+            this.cmdAdd.Size = new System.Drawing.Size(95, 34);
+            this.cmdAdd.TabIndex = 2;
+            this.cmdAdd.Text = "Add";
+            this.cmdAdd.UseVisualStyleBackColor = true;
+            this.cmdAdd.Click += new System.EventHandler(this.cmdAdd_Click);
+            // 
+            // cmdSave
+            // 
+            this.cmdSave.Location = new System.Drawing.Point(505, 138);
+            this.cmdSave.Name = "cmdSave";
+            this.cmdSave.Size = new System.Drawing.Size(95, 35);
+            this.cmdSave.TabIndex = 3;
+            this.cmdSave.Text = "Save";
+            this.cmdSave.UseVisualStyleBackColor = true;
+            this.cmdSave.Click += new System.EventHandler(this.cmdSave_Click);
+            // 
+            // cmdDelete
+            // 
+            this.cmdDelete.Location = new System.Drawing.Point(505, 179);
+            this.cmdDelete.Name = "cmdDelete";
+            this.cmdDelete.Size = new System.Drawing.Size(95, 33);
+            this.cmdDelete.TabIndex = 4;
+            this.cmdDelete.Text = "Delete";
+            this.cmdDelete.UseVisualStyleBackColor = true;
+            this.cmdDelete.Click += new System.EventHandler(this.cmdDelete_Click);
+            // 
+            // empdetailsTableAdapter
+            // 
+            this.empdetailsTableAdapter.ClearBeforeFill = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 370);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.cmdDelete);
+            this.Controls.Add(this.cmdSave);
+            this.Controls.Add(this.cmdAdd);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.bindingNavigator1);
             this.Name = "Form1";
             this.Text = "Employee Details";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
             this.bindingNavigator1.ResumeLayout(false);
             this.bindingNavigator1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.empdetailsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hRDataSet1)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.empdetailsBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.empdetailsBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.empdetailsBindingSource3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.empdetailsBindingSource4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.empdetailsBindingSource5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.empdetailsBindingSource6)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -398,16 +482,25 @@ namespace DisconnectedEnvironment
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.TextBox txtCode;
+        private System.Windows.Forms.TextBox txtName;
+        private System.Windows.Forms.TextBox txtAddress;
+        private System.Windows.Forms.TextBox txtState;
+        private System.Windows.Forms.TextBox txtCountry;
+        private System.Windows.Forms.ComboBox cbDesignation;
+        private System.Windows.Forms.ComboBox cbDepartment;
+        private System.Windows.Forms.Button cmdAdd;
+        private System.Windows.Forms.Button cmdSave;
+        private System.Windows.Forms.Button cmdDelete;
+        private HRDataSet1 hRDataSet1;
+        private System.Windows.Forms.BindingSource empdetailsBindingSource;
+        private HRDataSet1TableAdapters.empdetailsTableAdapter empdetailsTableAdapter;
+        private System.Windows.Forms.BindingSource empdetailsBindingSource1;
+        private System.Windows.Forms.BindingSource empdetailsBindingSource2;
+        private System.Windows.Forms.BindingSource empdetailsBindingSource3;
+        private System.Windows.Forms.BindingSource empdetailsBindingSource4;
+        private System.Windows.Forms.BindingSource empdetailsBindingSource5;
+        private System.Windows.Forms.BindingSource empdetailsBindingSource6;
     }
 }
 
