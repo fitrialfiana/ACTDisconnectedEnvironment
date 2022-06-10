@@ -108,7 +108,7 @@ namespace DisconnectedEnvironment
             this.bindingNavigator1.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.bindingNavigator1.Name = "bindingNavigator1";
             this.bindingNavigator1.PositionItem = this.bindingNavigatorPositionItem;
-            this.bindingNavigator1.Size = new System.Drawing.Size(800, 25);
+            this.bindingNavigator1.Size = new System.Drawing.Size(656, 25);
             this.bindingNavigator1.TabIndex = 0;
             this.bindingNavigator1.Text = "bindingNavigator1";
             // 
@@ -210,9 +210,10 @@ namespace DisconnectedEnvironment
             // 
             // tableLayoutPanel1
             // 
+            this.tableLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 41.42857F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 58.57143F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 34.1853F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 65.8147F));
             this.tableLayoutPanel1.Controls.Add(this.label2, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.label3, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.label4, 0, 3);
@@ -227,7 +228,7 @@ namespace DisconnectedEnvironment
             this.tableLayoutPanel1.Controls.Add(this.cbDesignation, 1, 5);
             this.tableLayoutPanel1.Controls.Add(this.cbDepartment, 1, 6);
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(48, 52);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(107, 65);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 7;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 51.38889F));
@@ -237,13 +238,15 @@ namespace DisconnectedEnvironment
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 39F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(350, 240);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(313, 240);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
             // label2
             // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(3, 34);
+            this.label2.ForeColor = System.Drawing.Color.Blue;
+            this.label2.Location = new System.Drawing.Point(3, 44);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(84, 13);
             this.label2.TabIndex = 1;
@@ -252,8 +255,10 @@ namespace DisconnectedEnvironment
             // 
             // label3
             // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(3, 67);
+            this.label3.ForeColor = System.Drawing.Color.Blue;
+            this.label3.Location = new System.Drawing.Point(3, 78);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(45, 13);
             this.label3.TabIndex = 2;
@@ -261,8 +266,10 @@ namespace DisconnectedEnvironment
             // 
             // label4
             // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(3, 102);
+            this.label4.ForeColor = System.Drawing.Color.Blue;
+            this.label4.Location = new System.Drawing.Point(3, 113);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(32, 13);
             this.label4.TabIndex = 3;
@@ -270,8 +277,10 @@ namespace DisconnectedEnvironment
             // 
             // label5
             // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(3, 137);
+            this.label5.ForeColor = System.Drawing.Color.Blue;
+            this.label5.Location = new System.Drawing.Point(3, 150);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(43, 13);
             this.label5.TabIndex = 4;
@@ -279,8 +288,10 @@ namespace DisconnectedEnvironment
             // 
             // label6
             // 
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(3, 176);
+            this.label6.ForeColor = System.Drawing.Color.Blue;
+            this.label6.Location = new System.Drawing.Point(3, 187);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(63, 13);
             this.label6.TabIndex = 5;
@@ -288,8 +299,10 @@ namespace DisconnectedEnvironment
             // 
             // label7
             // 
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(3, 211);
+            this.label7.ForeColor = System.Drawing.Color.Blue;
+            this.label7.Location = new System.Drawing.Point(3, 219);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(62, 13);
             this.label7.TabIndex = 6;
@@ -297,16 +310,18 @@ namespace DisconnectedEnvironment
             // 
             // txtCode
             // 
+            this.txtCode.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.txtCode.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.empdetailsBindingSource, "ccode", true));
-            this.txtCode.Location = new System.Drawing.Point(147, 3);
+            this.txtCode.Location = new System.Drawing.Point(109, 3);
             this.txtCode.Name = "txtCode";
             this.txtCode.Size = new System.Drawing.Size(100, 20);
             this.txtCode.TabIndex = 7;
             // 
             // txtName
             // 
+            this.txtName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.txtName.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.empdetailsBindingSource1, "cname", true));
-            this.txtName.Location = new System.Drawing.Point(147, 37);
+            this.txtName.Location = new System.Drawing.Point(109, 37);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(100, 20);
             this.txtName.TabIndex = 8;
@@ -319,8 +334,9 @@ namespace DisconnectedEnvironment
             // 
             // txtAddress
             // 
+            this.txtAddress.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.txtAddress.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.empdetailsBindingSource2, "caddress", true));
-            this.txtAddress.Location = new System.Drawing.Point(147, 70);
+            this.txtAddress.Location = new System.Drawing.Point(109, 70);
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(186, 20);
             this.txtAddress.TabIndex = 9;
@@ -332,8 +348,9 @@ namespace DisconnectedEnvironment
             // 
             // txtState
             // 
+            this.txtState.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.txtState.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.empdetailsBindingSource3, "cstate", true));
-            this.txtState.Location = new System.Drawing.Point(147, 105);
+            this.txtState.Location = new System.Drawing.Point(109, 105);
             this.txtState.Name = "txtState";
             this.txtState.Size = new System.Drawing.Size(100, 20);
             this.txtState.TabIndex = 10;
@@ -345,8 +362,9 @@ namespace DisconnectedEnvironment
             // 
             // txtCountry
             // 
+            this.txtCountry.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.txtCountry.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.empdetailsBindingSource4, "ccountry", true));
-            this.txtCountry.Location = new System.Drawing.Point(147, 140);
+            this.txtCountry.Location = new System.Drawing.Point(109, 140);
             this.txtCountry.Name = "txtCountry";
             this.txtCountry.Size = new System.Drawing.Size(100, 20);
             this.txtCountry.TabIndex = 11;
@@ -358,9 +376,10 @@ namespace DisconnectedEnvironment
             // 
             // cbDesignation
             // 
+            this.cbDesignation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.cbDesignation.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.empdetailsBindingSource5, "cDesignation", true));
             this.cbDesignation.FormattingEnabled = true;
-            this.cbDesignation.Location = new System.Drawing.Point(147, 179);
+            this.cbDesignation.Location = new System.Drawing.Point(109, 179);
             this.cbDesignation.Name = "cbDesignation";
             this.cbDesignation.Size = new System.Drawing.Size(121, 21);
             this.cbDesignation.TabIndex = 12;
@@ -372,9 +391,10 @@ namespace DisconnectedEnvironment
             // 
             // cbDepartment
             // 
+            this.cbDepartment.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.cbDepartment.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.empdetailsBindingSource6, "cDepartment", true));
             this.cbDepartment.FormattingEnabled = true;
-            this.cbDepartment.Location = new System.Drawing.Point(147, 214);
+            this.cbDepartment.Location = new System.Drawing.Point(109, 214);
             this.cbDepartment.Name = "cbDepartment";
             this.cbDepartment.Size = new System.Drawing.Size(121, 21);
             this.cbDepartment.TabIndex = 13;
@@ -386,8 +406,10 @@ namespace DisconnectedEnvironment
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(3, 3);
+            this.label1.ForeColor = System.Drawing.Color.Blue;
+            this.label1.Location = new System.Drawing.Point(3, 10);
             this.label1.Margin = new System.Windows.Forms.Padding(3);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(81, 13);
@@ -397,32 +419,35 @@ namespace DisconnectedEnvironment
             // 
             // cmdAdd
             // 
-            this.cmdAdd.Location = new System.Drawing.Point(505, 98);
+            this.cmdAdd.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.cmdAdd.Location = new System.Drawing.Point(486, 119);
             this.cmdAdd.Name = "cmdAdd";
-            this.cmdAdd.Size = new System.Drawing.Size(95, 34);
+            this.cmdAdd.Size = new System.Drawing.Size(77, 34);
             this.cmdAdd.TabIndex = 2;
             this.cmdAdd.Text = "Add";
-            this.cmdAdd.UseVisualStyleBackColor = true;
+            this.cmdAdd.UseVisualStyleBackColor = false;
             this.cmdAdd.Click += new System.EventHandler(this.cmdAdd_Click);
             // 
             // cmdSave
             // 
-            this.cmdSave.Location = new System.Drawing.Point(505, 138);
+            this.cmdSave.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.cmdSave.Location = new System.Drawing.Point(486, 167);
             this.cmdSave.Name = "cmdSave";
-            this.cmdSave.Size = new System.Drawing.Size(95, 35);
+            this.cmdSave.Size = new System.Drawing.Size(77, 29);
             this.cmdSave.TabIndex = 3;
             this.cmdSave.Text = "Save";
-            this.cmdSave.UseVisualStyleBackColor = true;
+            this.cmdSave.UseVisualStyleBackColor = false;
             this.cmdSave.Click += new System.EventHandler(this.cmdSave_Click);
             // 
             // cmdDelete
             // 
-            this.cmdDelete.Location = new System.Drawing.Point(505, 179);
+            this.cmdDelete.BackColor = System.Drawing.SystemColors.GrayText;
+            this.cmdDelete.Location = new System.Drawing.Point(486, 212);
             this.cmdDelete.Name = "cmdDelete";
-            this.cmdDelete.Size = new System.Drawing.Size(95, 33);
+            this.cmdDelete.Size = new System.Drawing.Size(77, 28);
             this.cmdDelete.TabIndex = 4;
             this.cmdDelete.Text = "Delete";
-            this.cmdDelete.UseVisualStyleBackColor = true;
+            this.cmdDelete.UseVisualStyleBackColor = false;
             this.cmdDelete.Click += new System.EventHandler(this.cmdDelete_Click);
             // 
             // empdetailsTableAdapter
@@ -433,7 +458,8 @@ namespace DisconnectedEnvironment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 370);
+            this.BackColor = System.Drawing.Color.Silver;
+            this.ClientSize = new System.Drawing.Size(656, 370);
             this.Controls.Add(this.cmdDelete);
             this.Controls.Add(this.cmdSave);
             this.Controls.Add(this.cmdAdd);
